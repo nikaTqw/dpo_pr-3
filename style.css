@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type=file] {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #424F66 !important;
+}
+
+div, p {
+  color: #232B37 !important;
+}
+
+.displaylarge {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 54px;
+  line-height: 70px;
+}
+
+.displaymedium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.title {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sub_title {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price_product {
+  color: #C3A279 !important;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.discription {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: italic;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+body {
+  background-color: #F8FBFE !important;
+}
+
+button {
+  background-color: #C3A279;
+  color: #F8FBFE;
+  padding: 7px 30px;
+  border-radius: 20px !important;
+  text-transform: uppercase !important;
+}
+
+button:hover, button:focus {
+  background-color: #d4a871;
+  padding: 8px 31px;
+  transition: color 0.5s;
+}
+
+button:active {
+  background-color: #f1a13f;
+  padding: 8px 31px;
+  transition: color 0.5s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#text-personalised {
+  background-color: #C3A279;
+  color: #F8FBFE;
+  padding: 10px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.img-size-8 {
+  width: 8vw;
+}
+
+.img-size-1 {
+  width: 1vw;
+}
+
+nav {
+  background-color: #424F66;
+  color: #F8FBFE;
+  gap: 13rem;
+}
+
+.text-color-grey {
+  color: #BFC5CF;
+}
+
+.text-color-light {
+  color: #F8FBFE;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+#section-coffee-class {
+  margin: 10vh 10vw;
+}
+
+#section-coffee-grid {
+  margin: 10vh 0 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bg-primary-section-1 {
+  z-index: -1;
+  background-color: #424F66;
+  width: 25vw;
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+
+#bg-light-section-1 {
+  z-index: -1;
+  background-color: #F8FBFE;
+  width: 75vw;
+  height: 90%;
+  position: absolute;
+  right: 0;
+}
+
+.mt-10vh {
+  margin-top: 10vh;
+}
+
+.card-coffee {
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px rgba(176, 185, 190, 0.3);
+  padding: 0 !important;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.background-card-img {
+  background-color: #ECEFF4;
+}
+
+.button-secondary {
+  padding: 7px 30px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container-coffee-grid {
+  margin: 10vh 13vw 0;
+  width: 115vw !important;
+}
+
+.arrow {
+  background-color: #C3A279;
+  color: #F8FBFE !important;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#section-gift {
+  padding: 10vh 0 0;
+  height: 100%;
+}
+
+#bg-grey-section-2 {
+  z-index: -1;
+  background-color: #BFC5CF;
+  width: 75vw;
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+
+#bg-light-section-2 {
+  z-index: -1;
+  background-color: #F8FBFE;
+  width: 25vw;
+  height: 90%;
+  position: absolute;
+  right: 0;
+}
+
+#card-gift {
+  background-color: white;
+  width: 75vw;
+  margin: 10vh 0 5vh;
+}
+
+#img-gift {
+  position: relative;
+  top: 30px;
+  right: 10vw;
+}
+
+#section-coffee-personalised {
+  padding: 10vh 0 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-light-section-3 {
+  z-index: -1;
+  background-color: #F8FBFE;
+  width: 75vw;
+  height: 90vh;
+  position: absolute;
+  left: 0;
+}
+
+#bg-dark-section-3 {
+  z-index: -1;
+  background-color: #232B37;
+  width: 25vw;
+  height: 90vh;
+  position: absolute;
+  right: 0;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  margin: 10vh 10vw 0;
+  gap: 2rem;
+}
+
+.container-grid img {
+  width: 100%;
+}
+
+#footer {
+  background-color: #BFC5CF;
+  color: #424F66;
+  padding: 1vw;
+}/*# sourceMappingURL=style.css.map */

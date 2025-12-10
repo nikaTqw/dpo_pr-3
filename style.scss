@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$primary: #424F66;
+$accent-1: #C3A279;
+$accent-2: #F8FBFE;
+$dark: #232B37;
+$light-grey: #BFC5CF;
+
+//сброс стилей
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $primary !important;
+}
+
+div, p {
+  color: $dark !important;
+}
+
+//scss
+
+@mixin monteserrat_font($weight, $size, $height) {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin nunito_font($weight, $size, $height) {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+}
+
+.displaylarge {
+  @include monteserrat_font(900, 54px, 70px);
+}
+
+.displaymedium {
+  @include monteserrat_font(900, 30px, 34px);
+}
+
+.title {
+  @include nunito_font(900, 24px, 28px);
+}
+
+.sub_title {
+  @include nunito_font(700, 20px, 24px);
+}
+
+.price_product{
+  color: $accent-1 !important;
+  @include nunito_font(700, 20px, 24px);
+}
+
+body {
+  @include nunito_font(500, 16px, 20px);
+}
+
+.discription {
+  @include nunito_font(500, 16px, 20px);
+  font-style: italic
+}
+
+button {
+  @include nunito_font(900, 16px, 20px);
+}
+
+//css
+
+body {
+  background-color: $accent-2 !important;
+}
+
+button {
+  background-color: $accent-1;
+  color: $accent-2;
+  padding: 7px 30px;
+  border-radius: 20px !important;
+  text-transform: uppercase !important;
+}
+
+button:hover, button:focus {
+  background-color: #d4a871;
+  padding: 8px 31px;
+  transition: color .5s;
+}
+
+button:active {
+  background-color: #f1a13f;  
+  padding: 8px 31px;
+  transition: color .5s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#text-personalised {
+  background-color: $accent-1;
+  color: $accent-2;
+  padding: 10px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.img-size-8 {
+  width: 8vw;
+}
+
+.img-size-1 {
+  width: 1vw;
+}
+
+nav {
+  background-color: $primary;
+  color: $accent-2;
+  gap: 13rem;
+}
+
+.text-color-grey {
+  color: $light-grey;
+}
+
+.text-color-light {
+  color: $accent-2;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+// section 2
+
+#section-coffee-class {
+  margin: 10vh 10vw;
+}
+
+// section 3
+
+#section-coffee-grid {
+  margin: 10vh 0 0;
+  height: 100%;  
+  overflow: hidden;
+}
+
+#bg-primary-section-1 {
+  z-index: -1;
+  background-color: $primary;
+  width: 25vw;
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+
+#bg-light-section-1 {
+  z-index: -1;
+  background-color: $accent-2;
+  width: 75vw;
+  height: 90%;
+  position: absolute;
+  right: 0;
+}
+
+.mt-10vh {
+  margin-top: 10vh;
+}
+
+.card-coffee {
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px rgba(176, 185, 190, 0.3);
+  padding: 0 !important;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.background-card-img {
+  background-color: #ECEFF4;
+}
+
+.button-secondary {
+  padding: 7px 30px;
+  @include nunito_font(900, 16px, 20px);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container-coffee-grid {
+  margin: 10vh 13vw 0;
+  width: 115vw !important;
+}
+
+.arrow {
+  background-color: $accent-1;
+  color: $accent-2 !important;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+// section 4
+
+#section-gift {
+  padding: 10vh 0 0;
+  height: 100%;  
+}
+
+#bg-grey-section-2 {
+  z-index: -1;
+  background-color: $light-grey;
+  width: 75vw;
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+
+#bg-light-section-2 {
+  z-index: -1;
+  background-color: $accent-2;
+  width: 25vw;
+  height: 90%;
+  position: absolute;
+  right: 0;
+}
+
+#card-gift {
+  background-color: white;
+  width: 75vw;
+  margin: 10vh 0 5vh;
+}
+
+#img-gift {
+  position: relative;
+  top: 30px;
+  right: 10vw;
+}
+
+// section 5
+
+#section-coffee-personalised {
+  padding: 10vh 0 0;
+  height: 100vh;  
+  overflow: hidden;
+}
+
+#bg-light-section-3 {
+  z-index: -1;
+  background-color: $accent-2;
+  width: 75vw;
+  height: 90vh;
+  position: absolute;
+  left: 0;
+}
+
+#bg-dark-section-3 {
+  z-index: -1;
+  background-color: $dark;
+  width: 25vw;
+  height: 90vh;
+  position: absolute;
+  right: 0;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  margin: 10vh 10vw 0;
+  gap: 2rem;
+}
+
+.container-grid img {
+  width: 100%;
+}
+
+// footer
+
+#footer {
+  background-color: $light-grey;
+  color: $primary;
+  padding: 1vw;
+}
